@@ -10,12 +10,15 @@
         else
     end
 }
-
 =begin
 1.upto(100){|n|
     puts n
-    puts ("FIZZ") if n%3 == 0
-    puts ("BUZZ") if n%5 == 0
-    puts ("FIZZBUZZ") if n%15 == 0
+    if n%15 == 0 then
+        puts ("FIZZBUZZ")
+    elsif n%5 == 0
+        puts ("BUZZ")
+    elsif n%3 == 0
+        puts ("FIZZ")
+    end
 }
 =end
