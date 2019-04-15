@@ -7,7 +7,6 @@ while (small != 0)
     ans = small;
     small = big%small;
     big = ans;
-    #break if small == 0
 end
 p "最大公約数"
 puts ans
