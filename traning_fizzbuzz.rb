@@ -1,24 +1,24 @@
 1.upto(100){|n|
-    puts n
+    puts n;
     case
         when n%15 == 0 then
-            puts ("FIZZBUZZ")
+            puts ("FIZZBUZZ");
         when n%5 == 0 then
-            puts ("BUZZ")
+            puts ("BUZZ");
         when n%3 == 0 then
-            puts ("FIZZ")
+            puts ("FIZZ");
         else
     end
 }
 =begin
 1.upto(100){|n|
-    puts n
+    puts n;
     if n%15 == 0 then
-        puts ("FIZZBUZZ")
+        puts ("FIZZBUZZ");
     elsif n%5 == 0
-        puts ("BUZZ")
+        puts ("BUZZ");
     elsif n%3 == 0
-        puts ("FIZZ")
+        puts ("FIZZ");
     end
 }
 =end
