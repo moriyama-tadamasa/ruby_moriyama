@@ -1,5 +1,5 @@
 1.upto(100){|n|
-    puts n;
+    print n;
     case
         when n%15 == 0 then
             puts ("FIZZBUZZ");
@@ -8,6 +8,7 @@
         when n%3 == 0 then
             puts ("FIZZ");
         else
+            puts
     end
 }
 =begin
