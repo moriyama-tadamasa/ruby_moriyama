@@ -1,12 +1,12 @@
-puts "大きい方の初期値を入力"
-big = gets.to_i;
-puts "小さい方の初期値を入力"
-small = gets.to_i;
+puts "初期値xを入力"
+x = gets.to_i;
+puts "初期値yを入力"
+y = gets.to_i;
 
-while (small != 0)
-    ans = small;
-    small = big%small;
-    big = ans;
+while (y != 0)
+    ans = y;
+    y = x % y;
+    x = ans;
 end
-p "最大公約数"
+puts "最大公約数"
 puts ans;
