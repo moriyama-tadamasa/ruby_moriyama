@@ -12,16 +12,10 @@ ans.each_char{|chr|
 }
 
 max_count = 0
-max_chr = ""
-hash1.each{|chr,cnt|
-    if(cnt > max_count) then
-        max_chr = chr
-        max_count = cnt
-    end
+hash1.each {|chr,cnt|
+    max_count = cnt if(cnt > max_count)
 }
-
-hash1.each{|chr,cnt|
-    if(cnt == max_count) then
-        p max_chr = chr
-    end
+p "最も出現頻度が高いのは"
+hash1.each {|chr,cnt|
+    p chr if(cnt == max_count)
 }
